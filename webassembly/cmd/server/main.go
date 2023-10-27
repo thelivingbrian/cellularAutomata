@@ -8,7 +8,8 @@ import (
 
 func getA(w http.ResponseWriter, r *http.Request) {
 	fmt.Printf("got /hello request\n")
-	io.WriteString(w, "<h2>This is my website!</h2>\n")
+	io.WriteString(w, "<html><body><h2>This is my website!</h2></body></html>")
+	//io.WriteString(w, "<h2>Test</h2>\n")
 }
 
 func main() {
