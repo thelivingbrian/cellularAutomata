@@ -15,8 +15,8 @@ func getA(w http.ResponseWriter, r *http.Request) {
 func main() {
 	fmt.Println("Attempting to start server...")
 	http.HandleFunc("/hello", getA)
-	//err := http.ListenAndServe(":9090", http.FileServer(http.Dir("../../assets")))
-	err := http.ListenAndServe(":9090", nil)
+	fs := http.FileServer(http.Dir("../../assets/"))
+	err := http.ListenAndServe(":9090", fs)
 	if err != nil {
 		fmt.Println("Failed to start server", err)
 		return
