@@ -53,7 +53,7 @@ for(let i = 0; i<25; i++){
 
 const sleep = (waitTimeInMs: number) => new Promise(resolve => setTimeout(resolve, waitTimeInMs));
 
-let board = new Board(auto);
+/*let board = new Board(auto);
 board.print();
 let i = 0 
 function next() {
@@ -63,4 +63,4 @@ function next() {
     sleep(500).then(() => {i++; if(i<ITERATIONS) next();})
 }
 
-next();
+next(); */

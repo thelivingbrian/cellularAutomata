@@ -1,0 +1,11 @@
+<div class="grid">
+    <div *ngFor="let row of grid; let i = index" class="grid-row">
+      <div
+        *ngFor="let square of row; let j = index"
+        class="grid-square"
+        [style.background-color]="square"
+        (click)="toggleSquare(i, j)"
+      ></div>
+    </div>
+  </div>
+  
