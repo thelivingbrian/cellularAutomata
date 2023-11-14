@@ -96,7 +96,7 @@ public modifyCellByColor(current: Cell, hasColor: boolean, neighbors: Array<Cell
         }
         if (n > 3){
             //console.log('reset');
-            outputCell = outputCell.reset(color); // red blue
+            outputCell = outputCell.addColor(color); // red blue
             reporter('reseting color');
         }
     }
