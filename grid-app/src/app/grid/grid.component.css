@@ -4,8 +4,8 @@
   }
   
   .grid-row {
-    grid-template-columns: repeat(40, 20px);
     display: flex;
+    grid-template-columns: repeat(40, 20px);
   }
   
   .grid-square {

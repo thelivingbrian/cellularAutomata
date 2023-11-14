@@ -14,7 +14,7 @@ import { GridComponent } from './grid/grid.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [GridComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

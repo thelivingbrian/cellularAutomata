@@ -1,10 +1,23 @@
+<input (keydown.enter)="nextStep()" (keydown.shift)="reset()" />
+<button (click)="nextStep()">Next Step</button>
+<button (click)="reset()">Reset</button> <br />
+<button (click)="setClick('R')">Click Red</button>
+<button (click)="setClick('G')">Click Green</button>
+<button (click)="setClick('B')">Click Blue</button>
+<button (click)="setClick('W')">Click White</button>
+<button (click)="setClick('M')">Click Magenta</button>
+<button (click)="setClick('Y')">Click Y</button>
+
+<button (click)="setClick('I')">Click Inert</button>
+
+
 <div class="grid">
-    <div *ngFor="let row of grid; let i = index" class="grid-row">
+    <div *ngFor="let row of cellMatrix; let i = index" class="grid-row">
       <div
-        *ngFor="let square of row; let j = index"
+        *ngFor="let cell of row; let j = index"
         class="grid-square"
-        [style.background-color]="square"
-        (click)="toggleSquare(i, j)"
+        [style.background-color]="cell.contentForConsole()"
+        (click)="updateSquareColor(i, j, 'yellow')"
       ></div>
     </div>
   </div>
