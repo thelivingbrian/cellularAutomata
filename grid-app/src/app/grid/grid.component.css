@@ -1,0 +1,21 @@
+.grid {
+    display: grid;
+    grid-gap: 1px;
+  }
+  
+  .grid-row {
+    display: flex;
+    grid-template-columns: repeat(40, 20px);
+  }
+  
+  .grid-square {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #cfc;
+    cursor: pointer;
+  }
+  
+  .grid-square.active {
+    background-color: #3498db;
+  }
+  
