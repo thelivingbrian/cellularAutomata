@@ -7,5 +7,5 @@ The regular conway's game of life is a subset where all cells have the property 
 
 # Build / Run 
 To play you have two options: 
-- Run the included go server after "ng build"-ing
-- ng server from within the ./grid-app directory 
+- Run the included go server (after "ng build"-ing)
+- "ng serve" from within ./grid-app  
